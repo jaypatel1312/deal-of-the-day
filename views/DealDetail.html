@@ -1,0 +1,31 @@
+<header class="bar bar-nav">
+	<a href="#/" class="backbtn"><span class="icon icon-left-nav"></span></a>
+	<h1 class="title">{{deals.name}}</h1>
+</header>
+
+<div class="deal-container">
+	<!-- <img ng-src="{{deals.img}}" alt="" class="dealImg" /> -->
+	<p class="detailDesc">{{deals.description}}</p>
+</div>
+
+
+<!-- Block button in standard bar fixed above the footer -->
+<div class="bar bar-standard bar-footer-secondary deal-count">
+  <div class="half">
+      <span>Bought</span>
+      <span>{{deals.bought}}</span>
+  </div>
+  <div class="half">
+      <span>Expire On</span>
+      <span>{{deals.expire_date}}</span>
+  </div>
+</div>
+
+<nav class="bar bar-tab">
+  <div class="tab-item">
+    Price : ${{deals.price}}
+  </div>
+  <a class="tab-item active" href="#/deal-item/{{deals.id}}">
+    Buy
+  </a>
+</nav>

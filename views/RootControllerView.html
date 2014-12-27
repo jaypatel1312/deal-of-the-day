@@ -1,0 +1,22 @@
+<header class="bar bar-nav">
+  <div class="menu">
+  <h1 class="title">Deal of the Day</h1>
+</header>
+
+
+<div class="deal-container">
+  <ul class="table-view">
+    <li class="table-view-cell media" data-ng-repeat="deal in recommendedDeals">
+      <a class="navigate-right" href="#/deal-item/{{deal.id}}">
+        <img class="media-object pull-left" ng-src="{{deal.img}}">
+        <div class="media-body">
+          <h2 class="deal-title">{{deal.name}}</h2>
+          <p class="deal-summary">{{deal.description | words:30}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
